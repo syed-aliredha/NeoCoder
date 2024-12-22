@@ -17,7 +17,7 @@ import torch.distributed as dist
 import boto3
 # import deepspeed
 
-CACHE_DIR="/scratch4/danielk/ylu130/model-hf/"
+CACHE_DIR="/home/FYP/mohor001/NeoCoder/scratch4"
 completion_tokens = prompt_tokens = 0
 
 class ds_args(object):

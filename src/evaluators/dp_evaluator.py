@@ -1,4 +1,5 @@
-from tqdm import tqdm
+from tqdm.auto import tqdm
+import os
 from collections import defaultdict, Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from overrides import overrides
@@ -48,7 +49,7 @@ class CodeForceCorrectnessEvaluator(Evaluator):
 
         test_cases = self.read_test_case(self.test_case_path)
 
-        for result in tqdm(inference_result, desc="Problem", position=0):
+        for result in tqdm(inference_result, desc="Problem", position=0,leave=True):
             test_case = test_cases[result['problem_id']]
             if "codes" in result:
                 codes = []

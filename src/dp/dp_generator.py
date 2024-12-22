@@ -243,13 +243,18 @@ class OpenModelParallelThreadDPInference(CodeGenerator):
         with torch.no_grad():
             self.model.model.eval()
             records = []
+            candidate_premature_layers = list(range(0, self.model.model.config.num_hidden_layers, 2))
+            
+            config["do_sample"]=False
             
             for batch in tqdm(dataloader, desc="Inferencing DP"):
                 batch_inputs: Dict[Text, Tensor] = batch['inputs']
+                logger.warning('prepre')
                 batch_inputs = {k: v.to(torch.device('cuda')) for k, v in batch_inputs.items()}
-
+                logger.warning('doin dola')
                 outputs = self.model.model.generate(**batch_inputs,
-                                                    **config)
+                                                    **config,dola_layers=candidate_premature_layers)
+                logger.warning('did dola')
                 outputs = outputs[:, batch['inputs']['input_ids'].shape[1]:]
                 decoded_outputs = self.model.tokenizer.batch_decode(outputs, skip_special_tokens=True)
 

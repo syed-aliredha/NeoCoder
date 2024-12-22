@@ -6,7 +6,8 @@ from torch.utils.data import DataLoader
 
 from src.dp.generator import CodeGenerator
 from src.utils.configs import get_dp_inference_params
-
+from huggingface_hub import login
+login("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")
 @click.command()
 @click.option("--dataset-path", type=click.Path(exists=True), required=True, help="The path of the DP dataset.")
 @click.option("--model-name", type=str, required=True, help="The name of the model.")
