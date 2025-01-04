@@ -6,7 +6,7 @@
 #SBATCH --gres=gpu:1
 
 ### Specify Memory allocate to this job ###
-#SBATCH --mem=10G
+#SBATCH --mem=64G
 
 ### Specify number of core (CPU) to allocate to per node ###
 #SBATCH --ntasks-per-node=1
@@ -37,7 +37,7 @@ cd $BASE_PATH
 export PYTHONPATH=${BASE_PATH}
 
 
-python steps/creativity_evaluation.py \
+python3 steps/creativity_evaluation.py \
      --task correctness \
      --inference-result-path datasets/CodeForce/inference/Llama-3.1-8B-Instruct_sample=199_dp=5.json \
      --test-case-path datasets/CodeForce/NeoCoder/test_cases_annotated.json \

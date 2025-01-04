@@ -1,431 +1,10 @@
-12/22/2024 07:45:01 - INFO - src.evaluators.dp_evaluator -   Functional Correctness Evaluation: model_name=Llama-3.1-8B-Instruct,                       num_sample=199,                       num_dp=5
+01/05/2025 01:17:11 - INFO - src.evaluators.dp_evaluator -   Functional Correctness Evaluation: model_name=Llama-3.1-8B-Instruct,                       num_sample=199,                       num_dp=5
 Problem:   0%|          | 0/199 [00:00<?, ?it/s]
 DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
                                                           [A
 DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
                                                           [A
 DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:00<00:00, 12.71it/s][A
-                                                                  [AProblem:   2%|▏         | 3/199 [00:00<00:10, 18.29it/s]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:02<00:04,  1.07s/it][A
-                                                                  [AProblem:  12%|█▏        | 23/199 [00:02<00:18,  9.50it/s]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:06<00:12,  3.04s/it][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:12<00:06,  3.11s/it][AProblem:  12%|█▏        | 23/199 [00:20<00:18,  9.50it/s]
-DP Code Correctness:  83%|████████▎ | 5/6 [00:19<00:04,  4.31s/it][A
-DP Code Correctness: 100%|██████████| 6/6 [00:25<00:00,  4.85s/it][A
-                                                                  [AProblem:  17%|█▋        | 33/199 [00:28<02:58,  1.08s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:06<00:34,  6.84s/it][A
-                                                                  [AProblem:  17%|█▋        | 34/199 [00:35<03:48,  1.39s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:01<00:02,  1.34it/s][A
-DP Code Correctness:  50%|█████     | 3/6 [00:03<00:03,  1.23s/it][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:05<00:01,  1.14s/it][A
-DP Code Correctness: 100%|██████████| 6/6 [00:12<00:00,  2.78s/it][A
-                                                                  [AProblem:  18%|█▊        | 36/199 [00:47<05:31,  2.04s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  50%|█████     | 3/6 [00:06<00:06,  2.27s/it][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:14<00:07,  3.92s/it][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:21<00:05,  5.01s/it][A
-DP Code Correctness: 100%|██████████| 6/6 [00:28<00:00,  5.43s/it][A
-                                                                  [AProblem:  19%|█▊        | 37/199 [01:15<11:31,  4.27s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:07<00:15,  3.85s/it][A
-                                                                  [AProblem:  19%|█▉        | 38/199 [01:23<12:29,  4.66s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness: 100%|██████████| 6/6 [00:01<00:00,  5.64it/s][A
-                                                                  [AProblem:  28%|██▊       | 55/199 [01:24<03:10,  1.32s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  50%|█████     | 3/6 [00:02<00:02,  1.26it/s][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:04<00:02,  1.24s/it][A
-DP Code Correctness: 100%|██████████| 6/6 [00:06<00:00,  1.22s/it][A
-                                                                  [AProblem:  28%|██▊       | 56/199 [01:31<03:55,  1.64s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:01<00:06,  1.35s/it][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:02<00:05,  1.36s/it][A
-DP Code Correctness:  50%|█████     | 3/6 [00:04<00:04,  1.36s/it][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:05<00:02,  1.36s/it][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:06<00:01,  1.36s/it][A
-DP Code Correctness: 100%|██████████| 6/6 [00:08<00:00,  1.36s/it][A
-                                                                  [AProblem:  29%|██▉       | 58/199 [01:39<04:40,  1.99s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:01<00:03,  1.12it/s][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:03<00:01,  1.11it/s][A
-DP Code Correctness: 100%|██████████| 6/6 [00:05<00:00,  1.13it/s][A
-                                                                  [AProblem:  30%|██▉       | 59/199 [01:45<05:20,  2.29s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:07<00:37,  7.48s/it][A
-                                                                  [AProblem:  32%|███▏      | 64/199 [01:52<04:27,  1.99s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:06<00:33,  6.74s/it][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:14<00:28,  7.09s/it][A
-DP Code Correctness:  50%|█████     | 3/6 [00:20<00:19,  6.64s/it][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:28<00:14,  7.40s/it][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:35<00:07,  7.22s/it][A
-                                                                  [AProblem:  34%|███▍      | 68/199 [02:28<09:03,  4.15s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:06<00:30,  6.12s/it][A
-DP Code Correctness:  50%|█████     | 3/6 [00:12<00:11,  3.94s/it][A
-                                                                  [AProblem:  35%|███▍      | 69/199 [02:40<10:48,  4.99s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:18<00:08,  4.36s/it][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:18<00:03,  3.44s/it][A
-                                                                  [AProblem:  52%|█████▏    | 104/199 [02:59<02:00,  1.27s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:16<00:33,  8.28s/it][A
-                                                                  [AProblem:  53%|█████▎    | 105/199 [03:15<02:46,  1.77s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:15<01:18, 15.69s/it][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:36<01:12, 18.05s/it][A
-DP Code Correctness:  50%|█████     | 3/6 [00:52<00:53, 17.77s/it][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:53<00:22, 11.10s/it][A
-DP Code Correctness:  83%|████████▎ | 5/6 [01:06<00:11, 11.69s/it][A
-DP Code Correctness: 100%|██████████| 6/6 [01:26<00:00, 14.39s/it][A
-                                                                  [AProblem:  53%|█████▎    | 106/199 [04:42<08:40,  5.60s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:30<02:33, 30.75s/it][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:48<01:30, 22.52s/it][A
-DP Code Correctness:  50%|█████     | 3/6 [01:01<00:55, 18.57s/it][A
-DP Code Correctness:  67%|██████▋   | 4/6 [01:18<00:36, 18.04s/it][A
-DP Code Correctness:  83%|████████▎ | 5/6 [01:27<00:14, 14.90s/it][A
-DP Code Correctness: 100%|██████████| 6/6 [01:52<00:00, 18.30s/it][A
-                                                                  [AProblem:  54%|█████▍    | 107/199 [06:48<19:38, 12.81s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:30<02:32, 30.41s/it][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:31<00:52, 13.08s/it][A
-                                                                  [AProblem:  54%|█████▍    | 108/199 [07:30<22:56, 15.13s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [AProblem:  55%|█████▍    | 109/199 [07:43<22:24, 14.94s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:12<01:03, 12.67s/it][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:40<01:25, 21.28s/it][A
-DP Code Correctness:  50%|█████     | 3/6 [00:40<00:35, 11.97s/it][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:58<00:28, 14.05s/it][A
-DP Code Correctness:  83%|████████▎ | 5/6 [01:11<00:13, 13.43s/it][A
-DP Code Correctness: 100%|██████████| 6/6 [01:40<00:00, 19.00s/it][A
-                                                                  [AProblem:  55%|█████▌    | 110/199 [09:23<38:13, 25.77s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:17<00:35,  8.89s/it][A
-DP Code Correctness:  50%|█████     | 3/6 [00:40<00:44, 14.85s/it][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:58<00:31, 15.68s/it][A
-DP Code Correctness:  83%|████████▎ | 5/6 [01:15<00:15, 15.96s/it][A
-DP Code Correctness: 100%|██████████| 6/6 [01:27<00:00, 14.81s/it][A
-                                                                  [AProblem:  56%|█████▌    | 111/199 [10:51<51:49, 35.33s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:27<02:17, 27.44s/it][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:43<01:23, 20.83s/it][A
-DP Code Correctness:  50%|█████     | 3/6 [01:02<00:58, 19.56s/it][A
-DP Code Correctness:  67%|██████▋   | 4/6 [01:10<00:30, 15.20s/it][A
-DP Code Correctness:  83%|████████▎ | 5/6 [01:27<00:15, 15.72s/it][A
-DP Code Correctness: 100%|██████████| 6/6 [01:43<00:00, 16.21s/it][A
-                                                                  [AProblem:  56%|█████▋    | 112/199 [12:48<1:12:20, 49.90s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:16<01:15, 15.15s/it][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:32<01:05, 16.50s/it][A
-DP Code Correctness:  50%|█████     | 3/6 [00:33<00:28,  9.40s/it][A
-                                                                  [AProblem:  57%|█████▋    | 113/199 [13:42<1:12:39, 50.69s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:00<00:00, 37.03it/s][A
-                                                                  [AProblem:  57%|█████▋    | 114/199 [13:42<55:39, 39.28s/it]  
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:12<00:25,  6.49s/it][A
-DP Code Correctness:  50%|█████     | 3/6 [00:13<00:12,  4.14s/it][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:31<00:17,  8.83s/it][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:51<00:13, 13.11s/it][A
-                                                                  [AProblem:  62%|██████▏   | 123/199 [14:33<18:09, 14.34s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:14<01:09, 13.84s/it][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:33<01:06, 16.61s/it][A
-DP Code Correctness:  50%|█████     | 3/6 [00:49<00:49, 16.57s/it][A
-DP Code Correctness:  67%|██████▋   | 4/6 [01:08<00:34, 17.44s/it][A
-DP Code Correctness:  83%|████████▎ | 5/6 [01:24<00:16, 16.71s/it][A
-DP Code Correctness: 100%|██████████| 6/6 [01:43<00:00, 17.83s/it][A
-                                                                  [AProblem:  62%|██████▏   | 124/199 [16:17<29:45, 23.80s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:15<00:28,  7.11s/it][A
-DP Code Correctness:  50%|█████     | 3/6 [00:34<00:36, 12.23s/it][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:34<00:15,  7.98s/it][A
-                                                                  [AProblem:  63%|██████▎   | 125/199 [16:52<31:05, 25.20s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:16<00:03,  3.33s/it][A
-DP Code Correctness: 100%|██████████| 6/6 [00:34<00:00,  6.40s/it][A
-                                                                  [AProblem:  64%|██████▍   | 127/199 [17:27<27:40, 23.06s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:15<01:15, 15.05s/it][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:15<00:26,  6.70s/it][A
-                                                                  [AProblem:  64%|██████▍   | 128/199 [17:43<25:54, 21.89s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:17<00:08,  4.18s/it][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:34<00:07,  7.57s/it][A
-DP Code Correctness: 100%|██████████| 6/6 [00:51<00:00, 10.33s/it][A
-                                                                  [AProblem:  65%|██████▌   | 130/199 [18:35<26:43, 23.24s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:13<01:04, 12.99s/it][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:31<01:03, 15.77s/it][A
-DP Code Correctness:  50%|█████     | 3/6 [00:31<00:26,  8.99s/it][A
-                                                                  [AProblem:  66%|██████▌   | 131/199 [19:06<28:05, 24.79s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:02<00:12,  2.53s/it][A
-                                                                  [AProblem:  73%|███████▎  | 146/199 [19:09<04:32,  5.13s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
                                                           [A
 DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
                                                           [A
@@ -443,132 +22,9 @@
                                                           [A
 DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
                                                           [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness: 100%|██████████| 6/6 [00:06<00:00,  1.00s/it][A
-                                                                  [AProblem:  87%|████████▋ | 174/199 [19:15<00:44,  1.79s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  50%|█████     | 3/6 [00:06<00:06,  2.02s/it][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:12<00:02,  2.52s/it][A
-                                                                  [AProblem:  88%|████████▊ | 175/199 [19:27<00:51,  2.14s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:06<00:30,  6.03s/it][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:06<00:10,  2.59s/it][A
-DP Code Correctness:  50%|█████     | 3/6 [00:06<00:04,  1.46s/it][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:06<00:01,  1.07it/s][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:06<00:00,  1.57it/s][A
-DP Code Correctness: 100%|██████████| 6/6 [00:06<00:00,  2.03it/s][A
-                                                                  [AProblem:  88%|████████▊ | 176/199 [19:34<00:54,  2.36s/it]
 DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:00<00:02,  2.04it/s][A
-DP Code Correctness:  50%|█████     | 3/6 [00:00<00:00,  6.00it/s][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:00<00:00,  7.29it/s][A
-                                                                  [AProblem:  89%|████████▉ | 177/199 [19:36<00:50,  2.30s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:00<00:00,  9.37it/s][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:00<00:00, 16.79it/s][A
-                                                                  [AProblem:  89%|████████▉ | 178/199 [19:36<00:45,  2.16s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:00<00:00,  6.82it/s][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:00<00:00,  7.25it/s][A
-DP Code Correctness:  50%|█████     | 3/6 [00:00<00:00,  8.06it/s][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:00<00:00,  7.09it/s][A
-DP Code Correctness: 100%|██████████| 6/6 [00:00<00:00,  7.31it/s][A
-                                                                  [AProblem:  90%|████████▉ | 179/199 [19:37<00:40,  2.05s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:00<00:00,  7.03it/s][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:00<00:00,  8.45it/s][A
-DP Code Correctness:  50%|█████     | 3/6 [00:00<00:00,  7.71it/s][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:00<00:00,  9.51it/s][A
-                                                                  [AProblem:  90%|█████████ | 180/199 [19:38<00:35,  1.88s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:00<00:00,  8.25it/s][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:00<00:00,  7.22it/s][A
-DP Code Correctness:  50%|█████     | 3/6 [00:00<00:00,  7.63it/s][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:00<00:00,  8.53it/s][A
-DP Code Correctness: 100%|██████████| 6/6 [00:00<00:00,  8.75it/s][A
-                                                                  [AProblem:  91%|█████████ | 181/199 [19:39<00:31,  1.74s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:06<00:30,  6.16s/it][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:12<00:24,  6.16s/it][A
-DP Code Correctness:  50%|█████     | 3/6 [00:18<00:18,  6.10s/it][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:18<00:02,  2.68s/it][A
-DP Code Correctness: 100%|██████████| 6/6 [00:18<00:00,  1.99s/it][A
-                                                                  [AProblem:  91%|█████████▏| 182/199 [19:58<01:22,  4.85s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:00<00:02,  2.14it/s][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:00<00:01,  3.06it/s][A
-DP Code Correctness:  50%|█████     | 3/6 [00:00<00:00,  3.35it/s][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:01<00:00,  3.20it/s][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:01<00:00,  2.81it/s][A
-DP Code Correctness: 100%|██████████| 6/6 [00:01<00:00,  3.50it/s][A
-                                                                  [AProblem:  92%|█████████▏| 183/199 [20:00<01:08,  4.25s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  50%|█████     | 3/6 [00:00<00:00, 24.52it/s][A
-DP Code Correctness: 100%|██████████| 6/6 [00:00<00:00, 16.20it/s][A
-                                                                  [AProblem:  92%|█████████▏| 184/199 [20:00<00:51,  3.41s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:06<00:30,  6.07s/it][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:06<00:10,  2.60s/it][A
-DP Code Correctness:  50%|█████     | 3/6 [00:12<00:12,  4.27s/it][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:12<00:05,  2.69s/it][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:12<00:01,  1.77s/it][A
-DP Code Correctness: 100%|██████████| 6/6 [00:13<00:00,  1.20s/it][A
-                                                                  [AProblem:  93%|█████████▎| 185/199 [20:14<01:21,  5.85s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:00<00:01,  4.69it/s][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:00<00:01,  2.77it/s][A
-DP Code Correctness:  50%|█████     | 3/6 [00:01<00:01,  2.45it/s][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:01<00:00,  3.32it/s][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:01<00:00,  3.32it/s][A
-DP Code Correctness: 100%|██████████| 6/6 [00:01<00:00,  4.06it/s][A
-                                                                  [AProblem:  93%|█████████▎| 186/199 [20:16<01:03,  4.88s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:00<00:01,  4.80it/s][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:00<00:00,  6.02it/s][A
-DP Code Correctness:  50%|█████     | 3/6 [00:00<00:00,  4.87it/s][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:00<00:00,  3.57it/s][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:01<00:00,  4.27it/s][A
-DP Code Correctness: 100%|██████████| 6/6 [00:01<00:00,  4.03it/s][A
-                                                                  [AProblem:  94%|█████████▍| 187/199 [20:17<00:47,  3.98s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  17%|█▋        | 1/6 [00:00<00:00,  6.17it/s][A
-DP Code Correctness:  50%|█████     | 3/6 [00:00<00:00,  9.11it/s][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:00<00:00,  6.31it/s][A
-DP Code Correctness: 100%|██████████| 6/6 [00:00<00:00,  7.97it/s][A
-                                                                  [AProblem:  94%|█████████▍| 188/199 [20:18<00:34,  3.16s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  50%|█████     | 3/6 [00:00<00:00,  7.63it/s][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:00<00:00,  7.12it/s][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:00<00:00,  6.50it/s][A
-DP Code Correctness: 100%|██████████| 6/6 [00:00<00:00,  5.58it/s][A
-                                                                  [AProblem:  95%|█████████▍| 189/199 [20:20<00:25,  2.58s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  33%|███▎      | 2/6 [00:00<00:00, 17.06it/s][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:00<00:00,  9.65it/s][A
-DP Code Correctness: 100%|██████████| 6/6 [00:00<00:00,  9.84it/s][A
-                                                                  [AProblem:  95%|█████████▌| 190/199 [20:20<00:18,  2.06s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:00<00:00, 35.14it/s][A
-                                                                  [AProblem:  96%|█████████▌| 191/199 [20:21<00:12,  1.60s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness: 100%|██████████| 6/6 [00:00<00:00, 52.76it/s][A
-                                                                  [AProblem:  96%|█████████▋| 192/199 [20:21<00:08,  1.18s/it]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
                                                           [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  67%|██████▋   | 4/6 [00:00<00:00, 37.04it/s][A
-                                                                  [AProblem:  97%|█████████▋| 194/199 [20:21<00:03,  1.43it/s]
 DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [AProblem:  98%|█████████▊| 195/199 [20:21<00:02,  1.80it/s]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness: 100%|██████████| 6/6 [00:00<00:00, 57.82it/s][A
-                                                                  [AProblem:  98%|█████████▊| 196/199 [20:22<00:01,  2.24it/s]
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
                                                           [A
-DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-                                                          [AProblem:  99%|█████████▉| 198/199 [20:22<00:00,  3.51it/s]
 DP Code Correctness:   0%|          | 0/6 [00:00<?, ?it/s][A
-DP Code Correctness:  83%|████████▎ | 5/6 [00:00<00:00, 48.02it/s][A
-                                                                  [AProblem: 100%|██████████| 199/199 [20:22<00:00,  3.83it/s]Problem: 100%|██████████| 199/199 [20:22<00:00,  6.14s/it]
+DP Code Correctness:  33%|███▎      | 2/6 [00:11<00:23,  5.77s/it][A/cm/local/apps/slurm/var/spool/job11778/slurm_script: line 44: 3574956 Killed                  python3 steps/creativity_evaluation.py --task correctness --inference-result-path datasets/CodeForce/inference/Llama-3.1-8B-Instruct_sample=199_dp=5.json --test-case-path datasets/CodeForce/NeoCoder/test_cases_annotated.json --save-folder datasets/CodeForce/evaluation

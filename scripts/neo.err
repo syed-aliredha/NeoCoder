@@ -1,805 +1,4 @@
-12/21/2024 21:23:50 - INFO - accelerate.utils.modeling -   We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:03<00:11,  3.95s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:07<00:07,  3.93s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:11<00:03,  3.89s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  2.76s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.18s/it]
-12/21/2024 21:24:04 - INFO - src.dp.dp_generator -   Using HF for inference
-Inferencing DP:   0%|          | 0/199 [00:00<?, ?it/s]12/21/2024 21:24:04 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:24:04 - WARNING - src.dp.dp_generator -   doin dola
-/home/FYP/mohor001/.conda/envs/creativity/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:601: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
-  warnings.warn(
-/home/FYP/mohor001/.conda/envs/creativity/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
-  warnings.warn(
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-Starting from v4.46, the `logits` model output will have the same type as the model (except at train time, where it will always be FP32)
-12/21/2024 21:25:28 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:   1%|          | 1/199 [01:24<4:38:58, 84.54s/it]12/21/2024 21:25:28 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:25:28 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:26:43 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:   1%|          | 2/199 [02:39<4:18:57, 78.87s/it]12/21/2024 21:26:43 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:26:43 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:28:08 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:   2%|▏         | 3/199 [04:04<4:26:24, 81.55s/it]12/21/2024 21:28:08 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:28:08 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:29:31 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:   2%|▏         | 4/199 [05:26<4:26:14, 81.92s/it]12/21/2024 21:29:31 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:29:31 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:30:52 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:   3%|▎         | 5/199 [06:48<4:24:16, 81.73s/it]12/21/2024 21:30:52 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:30:52 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:32:20 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:   3%|▎         | 6/199 [08:15<4:29:23, 83.75s/it]12/21/2024 21:32:20 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:32:20 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:33:43 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:   4%|▎         | 7/199 [09:39<4:28:00, 83.75s/it]12/21/2024 21:33:43 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:33:43 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:35:05 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:   4%|▍         | 8/199 [11:01<4:24:47, 83.18s/it]12/21/2024 21:35:05 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:35:05 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:36:25 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:   5%|▍         | 9/199 [12:21<4:19:50, 82.06s/it]12/21/2024 21:36:25 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:36:25 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:37:44 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:   5%|▌         | 10/199 [13:39<4:15:17, 81.04s/it]12/21/2024 21:37:44 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:37:44 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:39:01 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:   6%|▌         | 11/199 [14:57<4:10:40, 80.00s/it]12/21/2024 21:39:01 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:39:01 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:40:19 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:   6%|▌         | 12/199 [16:15<4:07:21, 79.37s/it]12/21/2024 21:40:19 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:40:19 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:41:38 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:   7%|▋         | 13/199 [17:34<4:05:28, 79.19s/it]12/21/2024 21:41:38 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:41:38 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:43:00 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:   7%|▋         | 14/199 [18:55<4:06:35, 79.98s/it]12/21/2024 21:43:00 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:43:00 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:44:24 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:   8%|▊         | 15/199 [20:19<4:08:51, 81.15s/it]12/21/2024 21:44:24 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:44:24 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:45:44 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:   8%|▊         | 16/199 [21:39<4:06:16, 80.75s/it]12/21/2024 21:45:44 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:45:44 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:47:05 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:   9%|▊         | 17/199 [23:00<4:05:12, 80.84s/it]12/21/2024 21:47:05 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:47:05 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:48:27 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:   9%|▉         | 18/199 [24:23<4:05:30, 81.38s/it]12/21/2024 21:48:27 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:48:27 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:49:47 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  10%|▉         | 19/199 [25:43<4:02:45, 80.92s/it]12/21/2024 21:49:47 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:49:47 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:51:05 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  10%|█         | 20/199 [27:01<3:58:40, 80.01s/it]12/21/2024 21:51:05 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:51:05 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:52:21 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  11%|█         | 21/199 [28:16<3:53:34, 78.74s/it]12/21/2024 21:52:21 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:52:21 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:53:39 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  11%|█         | 22/199 [29:35<3:52:02, 78.66s/it]12/21/2024 21:53:39 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:53:39 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:55:01 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  12%|█▏        | 23/199 [30:57<3:53:45, 79.69s/it]12/21/2024 21:55:01 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:55:01 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:56:21 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  12%|█▏        | 24/199 [32:17<3:52:43, 79.79s/it]12/21/2024 21:56:21 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:56:21 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:57:43 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  13%|█▎        | 25/199 [33:38<3:52:44, 80.26s/it]12/21/2024 21:57:43 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:57:43 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 21:59:02 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  13%|█▎        | 26/199 [34:58<3:50:52, 80.07s/it]12/21/2024 21:59:02 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 21:59:02 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:00:21 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  14%|█▎        | 27/199 [36:17<3:48:23, 79.67s/it]12/21/2024 22:00:21 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:00:21 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:01:45 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  14%|█▍        | 28/199 [37:40<3:50:31, 80.89s/it]12/21/2024 22:01:45 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:01:45 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:03:08 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  15%|█▍        | 29/199 [39:04<3:51:15, 81.62s/it]12/21/2024 22:03:08 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:03:08 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:04:27 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  15%|█▌        | 30/199 [40:23<3:47:36, 80.81s/it]12/21/2024 22:04:27 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:04:27 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:05:44 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  16%|█▌        | 31/199 [41:40<3:43:22, 79.78s/it]12/21/2024 22:05:44 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:05:44 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:07:08 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  16%|█▌        | 32/199 [43:03<3:45:05, 80.87s/it]12/21/2024 22:07:08 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:07:08 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:08:31 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  17%|█▋        | 33/199 [44:26<3:45:25, 81.48s/it]12/21/2024 22:08:31 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:08:31 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:09:52 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  17%|█▋        | 34/199 [45:47<3:43:37, 81.32s/it]12/21/2024 22:09:52 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:09:52 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:11:12 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  18%|█▊        | 35/199 [47:08<3:41:49, 81.15s/it]12/21/2024 22:11:12 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:11:12 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:12:36 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  18%|█▊        | 36/199 [48:31<3:42:09, 81.77s/it]12/21/2024 22:12:36 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:12:36 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:13:57 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  19%|█▊        | 37/199 [49:52<3:40:09, 81.54s/it]12/21/2024 22:13:57 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:13:57 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:15:19 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  19%|█▉        | 38/199 [51:14<3:39:05, 81.65s/it]12/21/2024 22:15:19 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:15:19 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:16:46 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  20%|█▉        | 39/199 [52:41<3:42:15, 83.35s/it]12/21/2024 22:16:46 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:16:46 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:18:03 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  20%|██        | 40/199 [53:58<3:35:36, 81.36s/it]12/21/2024 22:18:03 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:18:03 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:19:24 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  21%|██        | 41/199 [55:20<3:34:15, 81.36s/it]12/21/2024 22:19:24 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:19:24 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:20:41 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  21%|██        | 42/199 [56:37<3:29:44, 80.16s/it]12/21/2024 22:20:41 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:20:41 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:22:00 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  22%|██▏       | 43/199 [57:56<3:27:14, 79.71s/it]12/21/2024 22:22:00 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:22:00 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:23:26 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  22%|██▏       | 44/199 [59:21<3:30:41, 81.56s/it]12/21/2024 22:23:26 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:23:26 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:24:42 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  23%|██▎       | 45/199 [1:00:38<3:25:25, 80.03s/it]12/21/2024 22:24:42 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:24:42 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:26:00 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  23%|██▎       | 46/199 [1:01:56<3:22:32, 79.43s/it]12/21/2024 22:26:00 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:26:00 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:27:19 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  24%|██▎       | 47/199 [1:03:15<3:20:44, 79.24s/it]12/21/2024 22:27:19 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:27:19 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:28:39 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  24%|██▍       | 48/199 [1:04:35<3:19:54, 79.43s/it]12/21/2024 22:28:39 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:28:39 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:29:58 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  25%|██▍       | 49/199 [1:05:54<3:18:18, 79.33s/it]12/21/2024 22:29:58 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:29:58 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:31:22 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  25%|██▌       | 50/199 [1:07:17<3:20:16, 80.64s/it]12/21/2024 22:31:22 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:31:22 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:32:45 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  26%|██▌       | 51/199 [1:08:41<3:20:58, 81.48s/it]12/21/2024 22:32:45 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:32:45 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:34:14 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  26%|██▌       | 52/199 [1:10:10<3:25:01, 83.68s/it]12/21/2024 22:34:14 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:34:14 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:35:40 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  27%|██▋       | 53/199 [1:11:35<3:25:12, 84.33s/it]12/21/2024 22:35:40 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:35:40 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:36:57 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  27%|██▋       | 54/199 [1:12:52<3:18:28, 82.13s/it]12/21/2024 22:36:57 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:36:57 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:38:24 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  28%|██▊       | 55/199 [1:14:20<3:20:40, 83.61s/it]12/21/2024 22:38:24 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:38:24 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:39:46 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  28%|██▊       | 56/199 [1:15:41<3:18:01, 83.09s/it]12/21/2024 22:39:46 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:39:46 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:41:03 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  29%|██▊       | 57/199 [1:16:59<3:12:48, 81.47s/it]12/21/2024 22:41:03 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:41:03 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:42:24 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  29%|██▉       | 58/199 [1:18:20<3:10:46, 81.18s/it]12/21/2024 22:42:24 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:42:24 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:43:50 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  30%|██▉       | 59/199 [1:19:46<3:13:09, 82.78s/it]12/21/2024 22:43:51 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:43:51 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:45:11 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  30%|███       | 60/199 [1:21:06<3:10:00, 82.01s/it]12/21/2024 22:45:11 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:45:11 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:46:30 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  31%|███       | 61/199 [1:22:25<3:06:38, 81.15s/it]12/21/2024 22:46:30 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:46:30 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:47:46 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  31%|███       | 62/199 [1:23:42<3:02:02, 79.72s/it]12/21/2024 22:47:46 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:47:46 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:49:07 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  32%|███▏      | 63/199 [1:25:03<3:01:25, 80.04s/it]12/21/2024 22:49:07 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:49:07 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:50:29 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  32%|███▏      | 64/199 [1:26:25<3:01:19, 80.59s/it]12/21/2024 22:50:29 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:50:29 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:51:44 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  33%|███▎      | 65/199 [1:27:40<2:56:30, 79.04s/it]12/21/2024 22:51:44 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:51:44 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:52:59 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  33%|███▎      | 66/199 [1:28:55<2:52:29, 77.82s/it]12/21/2024 22:52:59 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:52:59 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:54:20 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  34%|███▎      | 67/199 [1:30:15<2:52:50, 78.57s/it]12/21/2024 22:54:20 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:54:20 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:55:40 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  34%|███▍      | 68/199 [1:31:36<2:52:45, 79.13s/it]12/21/2024 22:55:40 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:55:40 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:57:01 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  35%|███▍      | 69/199 [1:32:57<2:52:35, 79.66s/it]12/21/2024 22:57:01 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:57:01 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:58:20 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  35%|███▌      | 70/199 [1:34:15<2:50:35, 79.35s/it]12/21/2024 22:58:20 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:58:20 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 22:59:42 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  36%|███▌      | 71/199 [1:35:38<2:51:16, 80.29s/it]12/21/2024 22:59:42 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 22:59:42 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:01:03 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  36%|███▌      | 72/199 [1:36:59<2:50:33, 80.58s/it]12/21/2024 23:01:03 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:01:03 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:02:20 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  37%|███▋      | 73/199 [1:38:15<2:46:39, 79.36s/it]12/21/2024 23:02:20 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:02:20 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:03:42 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  37%|███▋      | 74/199 [1:39:38<2:47:21, 80.33s/it]12/21/2024 23:03:42 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:03:42 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:05:12 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  38%|███▊      | 75/199 [1:41:08<2:51:55, 83.19s/it]12/21/2024 23:05:12 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:05:12 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:06:35 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  38%|███▊      | 76/199 [1:42:30<2:50:02, 82.95s/it]12/21/2024 23:06:35 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:06:35 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:07:52 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  39%|███▊      | 77/199 [1:43:47<2:45:07, 81.21s/it]12/21/2024 23:07:52 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:07:52 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:09:10 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  39%|███▉      | 78/199 [1:45:06<2:42:07, 80.40s/it]12/21/2024 23:09:10 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:09:10 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:10:31 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  40%|███▉      | 79/199 [1:46:26<2:40:45, 80.38s/it]12/21/2024 23:10:31 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:10:31 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:11:54 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  40%|████      | 80/199 [1:47:49<2:40:56, 81.15s/it]12/21/2024 23:11:54 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:11:54 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:13:12 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  41%|████      | 81/199 [1:49:07<2:37:45, 80.21s/it]12/21/2024 23:13:12 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:13:12 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:14:37 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  41%|████      | 82/199 [1:50:32<2:39:16, 81.68s/it]12/21/2024 23:14:37 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:14:37 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:15:58 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  42%|████▏     | 83/199 [1:51:54<2:37:56, 81.70s/it]12/21/2024 23:15:58 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:15:58 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:17:15 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  42%|████▏     | 84/199 [1:53:11<2:33:36, 80.14s/it]12/21/2024 23:17:15 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:17:15 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:18:33 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  43%|████▎     | 85/199 [1:54:29<2:31:06, 79.53s/it]12/21/2024 23:18:33 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:18:33 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:19:52 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  43%|████▎     | 86/199 [1:55:47<2:29:11, 79.21s/it]12/21/2024 23:19:52 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:19:52 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:21:10 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  44%|████▎     | 87/199 [1:57:06<2:27:31, 79.03s/it]12/21/2024 23:21:10 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:21:10 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:22:33 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  44%|████▍     | 88/199 [1:58:29<2:28:34, 80.31s/it]12/21/2024 23:22:33 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:22:33 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:23:58 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  45%|████▍     | 89/199 [1:59:54<2:29:46, 81.69s/it]12/21/2024 23:23:58 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:23:58 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:25:21 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  45%|████▌     | 90/199 [2:01:17<2:29:09, 82.10s/it]12/21/2024 23:25:21 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:25:21 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:26:54 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  46%|████▌     | 91/199 [2:02:49<2:33:14, 85.14s/it]12/21/2024 23:26:54 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:26:54 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:28:21 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  46%|████▌     | 92/199 [2:04:16<2:32:54, 85.74s/it]12/21/2024 23:28:21 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:28:21 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:29:41 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  47%|████▋     | 93/199 [2:05:36<2:28:16, 83.93s/it]12/21/2024 23:29:41 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:29:41 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:31:03 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  47%|████▋     | 94/199 [2:06:59<2:26:21, 83.64s/it]12/21/2024 23:31:03 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:31:03 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:32:24 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  48%|████▊     | 95/199 [2:08:20<2:23:25, 82.74s/it]12/21/2024 23:32:24 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:32:24 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:33:47 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  48%|████▊     | 96/199 [2:09:43<2:22:12, 82.84s/it]12/21/2024 23:33:47 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:33:47 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:35:07 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  49%|████▊     | 97/199 [2:11:03<2:19:31, 82.07s/it]12/21/2024 23:35:07 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:35:07 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:36:32 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  49%|████▉     | 98/199 [2:12:28<2:19:29, 82.87s/it]12/21/2024 23:36:32 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:36:32 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:37:58 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  50%|████▉     | 99/199 [2:13:54<2:19:41, 83.81s/it]12/21/2024 23:37:58 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:37:58 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:39:26 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  50%|█████     | 100/199 [2:15:21<2:20:10, 84.96s/it]12/21/2024 23:39:26 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:39:26 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:40:40 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  51%|█████     | 101/199 [2:16:36<2:13:32, 81.76s/it]12/21/2024 23:40:40 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:40:40 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:41:59 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  51%|█████▏    | 102/199 [2:17:54<2:10:38, 80.81s/it]12/21/2024 23:41:59 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:41:59 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:43:16 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  52%|█████▏    | 103/199 [2:19:12<2:07:34, 79.73s/it]12/21/2024 23:43:16 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:43:16 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:44:38 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  52%|█████▏    | 104/199 [2:20:33<2:07:10, 80.32s/it]12/21/2024 23:44:38 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:44:38 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:46:00 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  53%|█████▎    | 105/199 [2:21:55<2:06:38, 80.84s/it]12/21/2024 23:46:00 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:46:00 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:47:19 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  53%|█████▎    | 106/199 [2:23:14<2:04:31, 80.33s/it]12/21/2024 23:47:19 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:47:19 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:48:35 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  54%|█████▍    | 107/199 [2:24:30<2:01:10, 79.03s/it]12/21/2024 23:48:35 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:48:35 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:49:53 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  54%|█████▍    | 108/199 [2:25:48<1:59:24, 78.74s/it]12/21/2024 23:49:53 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:49:53 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:51:10 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  55%|█████▍    | 109/199 [2:27:06<1:57:25, 78.28s/it]12/21/2024 23:51:10 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:51:10 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:52:31 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  55%|█████▌    | 110/199 [2:28:27<1:57:15, 79.05s/it]12/21/2024 23:52:31 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:52:31 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:53:52 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  56%|█████▌    | 111/199 [2:29:47<1:56:41, 79.56s/it]12/21/2024 23:53:52 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:53:52 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:55:14 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  56%|█████▋    | 112/199 [2:31:09<1:56:23, 80.27s/it]12/21/2024 23:55:14 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:55:14 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:56:39 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  57%|█████▋    | 113/199 [2:32:34<1:57:07, 81.71s/it]12/21/2024 23:56:39 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:56:39 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:57:57 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  57%|█████▋    | 114/199 [2:33:53<1:54:30, 80.82s/it]12/21/2024 23:57:57 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:57:57 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/21/2024 23:59:17 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  58%|█████▊    | 115/199 [2:35:12<1:52:28, 80.34s/it]12/21/2024 23:59:17 - WARNING - src.dp.dp_generator -   prepre
-12/21/2024 23:59:17 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:00:42 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  58%|█████▊    | 116/199 [2:36:38<1:53:11, 81.82s/it]12/22/2024 00:00:42 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:00:42 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:02:09 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  59%|█████▉    | 117/199 [2:38:05<1:54:00, 83.42s/it]12/22/2024 00:02:09 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:02:09 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:03:26 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  59%|█████▉    | 118/199 [2:39:22<1:50:00, 81.49s/it]12/22/2024 00:03:26 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:03:26 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:04:47 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  60%|█████▉    | 119/199 [2:40:42<1:48:18, 81.23s/it]12/22/2024 00:04:47 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:04:47 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:06:03 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  60%|██████    | 120/199 [2:41:59<1:45:11, 79.89s/it]12/22/2024 00:06:03 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:06:03 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:07:17 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  61%|██████    | 121/199 [2:43:13<1:41:30, 78.09s/it]12/22/2024 00:07:17 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:07:17 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:08:36 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  61%|██████▏   | 122/199 [2:44:31<1:40:19, 78.17s/it]12/22/2024 00:08:36 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:08:36 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:09:56 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  62%|██████▏   | 123/199 [2:45:52<1:39:48, 78.79s/it]12/22/2024 00:09:56 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:09:56 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:11:14 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  62%|██████▏   | 124/199 [2:47:10<1:38:20, 78.68s/it]12/22/2024 00:11:14 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:11:14 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:12:29 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  63%|██████▎   | 125/199 [2:48:25<1:35:39, 77.56s/it]12/22/2024 00:12:29 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:12:29 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:13:51 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  63%|██████▎   | 126/199 [2:49:47<1:35:52, 78.81s/it]12/22/2024 00:13:51 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:13:51 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:15:14 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  64%|██████▍   | 127/199 [2:51:10<1:36:04, 80.07s/it]12/22/2024 00:15:14 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:15:14 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:16:37 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  64%|██████▍   | 128/199 [2:52:33<1:35:55, 81.06s/it]12/22/2024 00:16:37 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:16:37 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:17:59 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  65%|██████▍   | 129/199 [2:53:55<1:34:48, 81.26s/it]12/22/2024 00:17:59 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:17:59 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:19:17 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  65%|██████▌   | 130/199 [2:55:13<1:32:25, 80.36s/it]12/22/2024 00:19:17 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:19:17 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:20:39 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  66%|██████▌   | 131/199 [2:56:35<1:31:36, 80.84s/it]12/22/2024 00:20:39 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:20:39 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:21:58 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  66%|██████▋   | 132/199 [2:57:53<1:29:27, 80.11s/it]12/22/2024 00:21:58 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:21:58 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:23:13 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  67%|██████▋   | 133/199 [2:59:09<1:26:29, 78.63s/it]12/22/2024 00:23:13 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:23:13 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:24:36 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  67%|██████▋   | 134/199 [3:00:32<1:26:38, 79.98s/it]12/22/2024 00:24:36 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:24:36 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:25:54 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  68%|██████▊   | 135/199 [3:01:49<1:24:35, 79.31s/it]12/22/2024 00:25:54 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:25:54 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:27:14 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  68%|██████▊   | 136/199 [3:03:10<1:23:31, 79.54s/it]12/22/2024 00:27:14 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:27:14 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:28:33 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  69%|██████▉   | 137/199 [3:04:29<1:22:10, 79.52s/it]12/22/2024 00:28:33 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:28:33 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:29:53 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  69%|██████▉   | 138/199 [3:05:48<1:20:49, 79.50s/it]12/22/2024 00:29:53 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:29:53 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:31:15 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  70%|██████▉   | 139/199 [3:07:11<1:20:22, 80.38s/it]12/22/2024 00:31:15 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:31:15 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:32:43 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  70%|███████   | 140/199 [3:08:38<1:21:08, 82.52s/it]12/22/2024 00:32:43 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:32:43 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:34:02 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  71%|███████   | 141/199 [3:09:57<1:18:40, 81.39s/it]12/22/2024 00:34:02 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:34:02 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:35:20 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  71%|███████▏  | 142/199 [3:11:16<1:16:37, 80.66s/it]12/22/2024 00:35:20 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:35:20 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:36:44 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  72%|███████▏  | 143/199 [3:12:39<1:16:01, 81.46s/it]12/22/2024 00:36:44 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:36:44 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:38:04 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  72%|███████▏  | 144/199 [3:13:59<1:14:15, 81.02s/it]12/22/2024 00:38:04 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:38:04 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:39:28 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  73%|███████▎  | 145/199 [3:15:23<1:13:39, 81.85s/it]12/22/2024 00:39:28 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:39:28 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:40:54 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  73%|███████▎  | 146/199 [3:16:49<1:13:23, 83.08s/it]12/22/2024 00:40:54 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:40:54 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:42:17 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  74%|███████▍  | 147/199 [3:18:13<1:12:13, 83.34s/it]12/22/2024 00:42:17 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:42:17 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:43:39 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  74%|███████▍  | 148/199 [3:19:35<1:10:25, 82.86s/it]12/22/2024 00:43:39 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:43:39 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:44:56 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  75%|███████▍  | 149/199 [3:20:52<1:07:38, 81.18s/it]12/22/2024 00:44:56 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:44:56 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:46:13 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  75%|███████▌  | 150/199 [3:22:09<1:05:12, 79.84s/it]12/22/2024 00:46:13 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:46:13 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:47:29 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  76%|███████▌  | 151/199 [3:23:25<1:02:53, 78.61s/it]12/22/2024 00:47:29 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:47:29 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:48:54 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  76%|███████▋  | 152/199 [3:24:49<1:03:02, 80.48s/it]12/22/2024 00:48:54 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:48:54 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:50:13 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  77%|███████▋  | 153/199 [3:26:08<1:01:22, 80.05s/it]12/22/2024 00:50:13 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:50:13 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:51:35 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  77%|███████▋  | 154/199 [3:27:30<1:00:25, 80.57s/it]12/22/2024 00:51:35 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:51:35 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:52:52 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  78%|███████▊  | 155/199 [3:28:48<58:25, 79.68s/it]  12/22/2024 00:52:52 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:52:52 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:54:10 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  78%|███████▊  | 156/199 [3:30:05<56:35, 78.97s/it]12/22/2024 00:54:10 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:54:10 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:55:35 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  79%|███████▉  | 157/199 [3:31:31<56:44, 81.07s/it]12/22/2024 00:55:36 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:55:36 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:56:56 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  79%|███████▉  | 158/199 [3:32:52<55:17, 80.92s/it]12/22/2024 00:56:56 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:56:56 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:58:17 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  80%|███████▉  | 159/199 [3:34:13<54:01, 81.03s/it]12/22/2024 00:58:17 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:58:17 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 00:59:43 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  80%|████████  | 160/199 [3:35:39<53:36, 82.47s/it]12/22/2024 00:59:43 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 00:59:43 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:01:02 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  81%|████████  | 161/199 [3:36:58<51:34, 81.43s/it]12/22/2024 01:01:02 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:01:02 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:02:21 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  81%|████████▏ | 162/199 [3:38:17<49:42, 80.61s/it]12/22/2024 01:02:21 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:02:21 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:03:46 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  82%|████████▏ | 163/199 [3:39:42<49:11, 82.00s/it]12/22/2024 01:03:46 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:03:46 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:05:07 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  82%|████████▏ | 164/199 [3:41:02<47:34, 81.56s/it]12/22/2024 01:05:07 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:05:07 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:06:31 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  83%|████████▎ | 165/199 [3:42:27<46:44, 82.48s/it]12/22/2024 01:06:31 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:06:31 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:07:52 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  83%|████████▎ | 166/199 [3:43:48<45:09, 82.09s/it]12/22/2024 01:07:52 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:07:52 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:09:11 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  84%|████████▍ | 167/199 [3:45:07<43:15, 81.10s/it]12/22/2024 01:09:11 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:09:11 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:10:32 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  84%|████████▍ | 168/199 [3:46:28<41:52, 81.04s/it]12/22/2024 01:10:32 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:10:32 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:11:49 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  85%|████████▍ | 169/199 [3:47:45<39:56, 79.87s/it]12/22/2024 01:11:49 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:11:49 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:13:07 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  85%|████████▌ | 170/199 [3:49:03<38:19, 79.31s/it]12/22/2024 01:13:07 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:13:07 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:14:26 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  86%|████████▌ | 171/199 [3:50:22<36:57, 79.20s/it]12/22/2024 01:14:26 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:14:26 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:15:43 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  86%|████████▋ | 172/199 [3:51:39<35:21, 78.57s/it]12/22/2024 01:15:43 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:15:43 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:17:02 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  87%|████████▋ | 173/199 [3:52:57<33:59, 78.44s/it]12/22/2024 01:17:02 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:17:02 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:18:22 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  87%|████████▋ | 174/199 [3:54:18<32:57, 79.10s/it]12/22/2024 01:18:22 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:18:22 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:19:44 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  88%|████████▊ | 175/199 [3:55:40<31:58, 79.92s/it]12/22/2024 01:19:44 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:19:44 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:21:04 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  88%|████████▊ | 176/199 [3:57:00<30:38, 79.92s/it]12/22/2024 01:21:04 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:21:04 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:22:22 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  89%|████████▉ | 177/199 [3:58:18<29:07, 79.44s/it]12/22/2024 01:22:22 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:22:22 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:23:49 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  89%|████████▉ | 178/199 [3:59:44<28:31, 81.50s/it]12/22/2024 01:23:49 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:23:49 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:25:04 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  90%|████████▉ | 179/199 [4:01:00<26:35, 79.76s/it]12/22/2024 01:25:04 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:25:04 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:26:25 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  90%|█████████ | 180/199 [4:02:20<25:19, 79.99s/it]12/22/2024 01:26:25 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:26:25 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:27:39 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  91%|█████████ | 181/199 [4:03:34<23:27, 78.22s/it]12/22/2024 01:27:39 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:27:39 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:28:59 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  91%|█████████▏| 182/199 [4:04:55<22:21, 78.93s/it]12/22/2024 01:28:59 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:28:59 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:30:23 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  92%|█████████▏| 183/199 [4:06:19<21:25, 80.36s/it]12/22/2024 01:30:23 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:30:23 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:31:44 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  92%|█████████▏| 184/199 [4:07:39<20:06, 80.46s/it]12/22/2024 01:31:44 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:31:44 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:33:04 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  93%|█████████▎| 185/199 [4:09:00<18:45, 80.40s/it]12/22/2024 01:33:04 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:33:04 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:34:23 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  93%|█████████▎| 186/199 [4:10:19<17:20, 80.03s/it]12/22/2024 01:34:23 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:34:23 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:35:40 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  94%|█████████▍| 187/199 [4:11:36<15:49, 79.16s/it]12/22/2024 01:35:40 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:35:40 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:37:01 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  94%|█████████▍| 188/199 [4:12:56<14:34, 79.48s/it]12/22/2024 01:37:01 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:37:01 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:38:27 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  95%|█████████▍| 189/199 [4:14:23<13:35, 81.54s/it]12/22/2024 01:38:27 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:38:27 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:39:48 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  95%|█████████▌| 190/199 [4:15:44<12:13, 81.55s/it]12/22/2024 01:39:49 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:39:49 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:41:13 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  96%|█████████▌| 191/199 [4:17:09<11:00, 82.54s/it]12/22/2024 01:41:13 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:41:13 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:42:37 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  96%|█████████▋| 192/199 [4:18:33<09:40, 82.96s/it]12/22/2024 01:42:37 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:42:37 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:43:58 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  97%|█████████▋| 193/199 [4:19:54<08:14, 82.34s/it]12/22/2024 01:43:58 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:43:58 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:45:14 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  97%|█████████▋| 194/199 [4:21:10<06:42, 80.51s/it]12/22/2024 01:45:14 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:45:14 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:46:33 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  98%|█████████▊| 195/199 [4:22:29<05:20, 80.07s/it]12/22/2024 01:46:33 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:46:33 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:47:54 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  98%|█████████▊| 196/199 [4:23:50<04:00, 80.25s/it]12/22/2024 01:47:54 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:47:54 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:49:11 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  99%|█████████▉| 197/199 [4:25:07<02:38, 79.37s/it]12/22/2024 01:49:11 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:49:11 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:50:30 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP:  99%|█████████▉| 198/199 [4:26:26<01:19, 79.13s/it]12/22/2024 01:50:30 - WARNING - src.dp.dp_generator -   prepre
-12/22/2024 01:50:30 - WARNING - src.dp.dp_generator -   doin dola
-Setting `pad_token_id` to `eos_token_id`:None for open-end generation.
-12/22/2024 01:51:55 - WARNING - src.dp.dp_generator -   did dola
-Inferencing DP: 100%|██████████| 199/199 [4:27:51<00:00, 80.95s/it]Inferencing DP: 100%|██████████| 199/199 [4:27:51<00:00, 80.76s/it]
+01/03/2025 10:14:12 - INFO - accelerate.utils.modeling -   We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:03<00:10,  3.49s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:07<00:07,  3.82s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:11<00:03,  3.88s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  2.55s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.00s/it]
+01/03/2025 10:14:25 - INFO - src.dp.dp_generator -   Using HF for inference
+Inferencing DP:   0%|          | 0/199 [00:00<?, ?it/s]Inferencing DP:   7%|▋         | 14/199 [00:00<00:01, 132.96it/s]Inferencing DP:  15%|█▍        | 29/199 [00:00<00:01, 138.15it/s]Inferencing DP:  22%|██▏       | 43/199 [00:00<00:01, 137.08it/s]Inferencing DP:  29%|██▊       | 57/199 [00:00<00:01, 134.28it/s]Inferencing DP:  36%|███▌      | 72/199 [00:00<00:00, 138.56it/s]Inferencing DP:  43%|████▎     | 86/199 [00:00<00:00, 138.77it/s]Inferencing DP:  50%|█████     | 100/199 [00:00<00:00, 129.67it/s]Inferencing DP:  58%|█████▊    | 116/199 [00:00<00:00, 135.50it/s]Inferencing DP:  66%|██████▌   | 131/199 [00:00<00:00, 138.95it/s]Inferencing DP:  73%|███████▎  | 146/199 [00:01<00:00, 138.55it/s]Inferencing DP:  80%|████████  | 160/199 [00:01<00:00, 138.29it/s]Inferencing DP:  88%|████████▊ | 175/199 [00:01<00:00, 139.26it/s]Inferencing DP:  95%|█████████▌| 190/199 [00:01<00:00, 140.02it/s]Inferencing DP: 100%|██████████| 199/199 [00:01<00:00, 137.61it/s]

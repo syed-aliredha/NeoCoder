@@ -15,6 +15,7 @@ from vllm import LLM
 import torch
 import torch.distributed as dist
 import boto3
+from transformers import BitsAndBytesConfig
 # import deepspeed
 
 CACHE_DIR="/home/FYP/mohor001/NeoCoder/scratch4"
@@ -87,6 +88,7 @@ class OpenModelHF(OpenModel):
                        deepspeed_config="src/utils/ds_config.json", 
                        deepspeed=True,
                        seed=42)
+        quantization_config = BitsAndBytesConfig(load_in_8bit=True)
         self.initialize(args)
         if "t5" in self.model_name.lower():
             self.model = transformers.AutoModelForSeq2SeqLM.from_pretrained(self.model_name, 
@@ -100,7 +102,8 @@ class OpenModelHF(OpenModel):
                                                                            cache_dir=CACHE_DIR,
                                                                            trust_remote_code=True,
                                                                            device_map="auto",
-                                                                           torch_dtype=torch.float16
+									   quantization_config=quantization_config,
+                                                                           torch_dtype="auto"
                                                                            )
         self.tokenizer = transformers.AutoTokenizer.from_pretrained(self.model_name, cache_dir=CACHE_DIR)
         if self.tokenizer.pad_token is None:
