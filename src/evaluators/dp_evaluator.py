@@ -1,4 +1,4 @@
-from tqdm.auto import tqdm
+from tqdm import tqdm
 import os
 from collections import defaultdict, Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -17,13 +17,70 @@ from .evaluation_utils import (estimate_pass_at_k,
 import json
 import logging
 import numpy as np
+import multiprocessing
+import sys
+import importlib.util
+import os
+import tempfile
+import sys
+import shutil
+
+def write_solve_to_file(code: str) -> str:
+    """
+    Write the dynamically generated code to a temporary Python file.
+    Return the directory and file name.
+    """
+    # Create a temporary directory
+    temp_dir = tempfile.mkdtemp()
+    file_path = os.path.join(temp_dir, "solve_module.py")
+
+    # Write the code to the file
+    with open(file_path, "w") as f:
+        f.write(code)
+
+    return temp_dir, file_path
+
+def import_solve_from_file(file_path: str, temp_dir: str):
+    """
+    Dynamically import the solve function from the given file.
+    Add the directory to sys.path for proper importing.
+    """
+    module_name = "solve_module"
+
+    # Add the temporary directory to sys.path
+    sys.path.insert(0, temp_dir)
+
+    # Import the module dynamically
+    if module_name in sys.modules:
+        del sys.modules[module_name]  # Ensure a fresh import
+
+    spec = importlib.util.spec_from_file_location(module_name, file_path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+
+    # Add the module to sys.modules for consistent referencing
+    sys.modules[module_name] = module
+
+    # Return the solve function from the module
+    return module.solve
 
 
-logging.basicConfig(
-    format="%(asctime)s - %(levelname)s - %(name)s - %(message)s",
-    datefmt="%m/%d/%Y %H:%M:%S",
-    level=logging.INFO,
-)
+
+def solver(queue,test_input, module_name="solve_module"):
+    spec = importlib.util.find_spec(module_name)
+    if spec is None:
+        raise ImportError(f"Module {module_name} could not be found.")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    solve_fn = module.solve
+
+    # Mock input and capture output
+    with mock_input(test_input):
+        with capture_output() as out:
+            solve_fn()
+            queue.put(out.getvalue().strip().split('\n'))
+
+                  
 
 logger = logging.getLogger(__name__)
 
@@ -66,13 +123,15 @@ class CodeForceCorrectnessEvaluator(Evaluator):
             correctness_all_dps = []
             output_all_dps = []
 
-            for dp_idx, code in enumerate(tqdm(codes, desc="DP Code Correctness", position=1, leave=False)):
+            for dp_idx, code in enumerate(tqdm(codes, desc="DP Code Correctness", position=1, leave=True)):
+          
                 if code is not None:
                     assert len(test_case['input']) == len(test_case['output'])
 
                     try:
                         (correctness, output) = function_with_timeout(self.test_correctness, (code, test_case['input'], test_case['output']), timeout=6)
-                    except TimeoutError:
+                    except Exception as e:
+                        
                         # correctness: False, output: "code execution timeout"
                         correctness_all_dps.append(False)
                         output_all_dps.append("code execution timeout")
@@ -171,7 +230,27 @@ class CodeForceCorrectnessEvaluator(Evaluator):
                 raise ValueError(f"Duplicate problem_id: {problem_id}")
         
         return test_cases
+    def execute_solve(self,test_input,module_name: str = "solve_module"):
+ 
+        
 
+        module = sys.modules[module_name]
+
+    # Access the solve function directly from the module
+        solve_fn = module.solve
+            
+
+        # Queue to capture results from the subprocess
+        queue = multiprocessing.Queue()
+        process = multiprocessing.Process(target=solver,args=(queue,test_input,))
+        process.start()
+        process.join()  # No timeout; wait until completion
+
+        if process.exitcode != 0:
+            # Process terminated abnormally (e.g., SIGKILL)
+            
+            raise Exception("oops crashhh")
+        return queue.get()
     def test_correctness(self, 
                          code: Text, 
                          test_case_inputs: List[List[List[Text]]], 
@@ -185,46 +264,50 @@ class CodeForceCorrectnessEvaluator(Evaluator):
         """
 
         try:
-            exec(code, globals())
+           
+            # exec(code, globals())
+            temp_dir, file_path = write_solve_to_file(code)
+
+        # Import the solve function dynamically and set up the module
+            import_solve_from_file(file_path, temp_dir)
         except:
             # code is not executable
+           
             return False, None
         
         try:
             # first try: feed testing cases at once
+            
             num_test_cases = len(test_case_inputs)
             test_input = [" ".join(row) for case in test_case_inputs for row in case]
             test_input.insert(0, str(num_test_cases))
-            with mock_input(test_input):
-                with capture_output() as out:
-                    solve()     
-                    output = out.getvalue().strip().split('\n')
-                    # if isinstance(test_case_outputs[0], list):
-                    #     test_case_outputs = [item for sublist in test_case_outputs for item in sublist]
-                    # output = [item for item in output if item] # remove empty string
-
+            output=self.execute_solve(test_input)   
             correctness = [type_agnostic_compare(out, test_out) for out, test_out in zip(output, test_case_outputs)]
             return all(correctness), output             
         except:
             # second try: feed testing cases one by one
+            
             output = []
             correctness = []
             for test_case_input, test_case_output in zip(test_case_inputs, test_case_outputs):
+
                 test_input = [" ".join(row) for row in test_case_input]
-                with mock_input(test_input):
-                    with capture_output() as out:
-                        try:
-                            solve()
-                            output_ = out.getvalue().strip()
+                
+                
+                
+                try:
+                    output_=self.execute_solve(test_input) 
                             # if isinstance(test_case_output, list):
                             #     output_ = output_.split('\n')
-                            correctness.append(type_agnostic_compare(output_, test_case_output))
-                            output.append(output_)
-                        except:
+
+                    correctness.append(type_agnostic_compare(output_, test_case_output))
+                    output.append(output_)
+                except:
                             # code is not executable
-                            correctness.append(False)
-                            output.append(None)
+                    correctness.append(False)
+                    output.append(None)
             return all(correctness), output
+
         
 class CodexCorrectnessEvaluator(Evaluator):
     def __init__(self,

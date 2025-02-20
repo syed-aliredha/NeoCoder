@@ -16,7 +16,7 @@
 
 ### Optional: Specify node to execute the job ###
 ### Remove 1st # at next line for the option to take effect ###
-##SBATCH --nodelist=TC1N07
+#SBATCH --nodelist=TC1N07
 
 ### Specify Time Limit, format: <min> or <min>:<sec> or <hr>:<min>:<sec> or <days>-<hr>:<min>:<sec> or <days>-<hr> ### 
 #SBATCH --time=360
@@ -35,7 +35,7 @@ BASE_PATH="/home/FYP/mohor001/NeoCoder"
 
 cd $BASE_PATH
 export PYTHONPATH=${BASE_PATH}
-
+export OPENAI_API_KEY="sk-BBjHJCVTgljJRCiuSQe_0lO78g4981uY_pC-MWjEQgT3BlbkFJUpCw6GCQTmUy1G-yHdEIeXljej9kcz7hiHJi5M5G8A"
 python steps/creativity_evaluation.py \
     --task detection \
     --inference-result-path datasets/CodeForce/evaluation/Llama-3.1-8B-Instruct_sample=199_dp=5_creativity.json \
