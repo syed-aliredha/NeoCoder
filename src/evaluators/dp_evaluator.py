@@ -105,8 +105,9 @@ class CodeForceCorrectnessEvaluator(Evaluator):
         inference_result = read_json(self.inference_result_path)
 
         test_cases = self.read_test_case(self.test_case_path)
-
-        for result in tqdm(inference_result, desc="Problem", position=0,leave=True):
+        
+        for rid,result in enumerate(inference_result):
+            
             test_case = test_cases[result['problem_id']]
             if "codes" in result:
                 codes = []
@@ -123,7 +124,7 @@ class CodeForceCorrectnessEvaluator(Evaluator):
             correctness_all_dps = []
             output_all_dps = []
 
-            for dp_idx, code in enumerate(tqdm(codes, desc="DP Code Correctness", position=1, leave=True)):
+            for dp_idx, code in enumerate(codes):
           
                 if code is not None:
                     assert len(test_case['input']) == len(test_case['output'])
