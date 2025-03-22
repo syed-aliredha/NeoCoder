@@ -35,7 +35,7 @@ BASE_PATH="/home/FYP/mohor001/NeoCoder"
 
 cd $BASE_PATH
 export PYTHONPATH=${BASE_PATH}
-export OPENAI_API_KEY="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"
+
 python steps/creativity_evaluation.py \
     --task detection \
     --inference-result-path datasets/CodeForce/evaluation/Llama-3.1-8B-Instruct_sample=199_dp=5_creativity.json \
