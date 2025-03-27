@@ -52,9 +52,21 @@ def main(
         print(f"Average Divergent Thinking:  {sum(divergent_scores)/len(divergent_scores):.4f}")
         print(f"Average NeoGauge Score:     {sum(neogauge_scores)/len(neogauge_scores):.4f}")
         
+        # Print information about CSV files created
+        model_name = os.path.basename(inference_result_path).split("_sample")[0]
+        print("\nDetailed Results Saved:")
+        print("-" * 50)
+        print(f"1. Individual scores per problem and generation:")
+        print(f"   {os.path.join(save_folder, f'{model_name}_individual_scores.csv')}")
+        print(f"\n2. Aggregated metrics per generation:")
+        print(f"   {os.path.join(save_folder, f'{model_name}_generation_metrics.csv')}")
+        print(f"\n3. Pivot tables (problem × generation):")
+        print(f"   Convergent: {os.path.join(save_folder, f'{model_name}_pivot_convergent.csv')}")
+        print(f"   Divergent:  {os.path.join(save_folder, f'{model_name}_pivot_divergent.csv')}")
+        print(f"   NeoGauge:   {os.path.join(save_folder, f'{model_name}_pivot_neogauge.csv')}")
+        
         # Also save these metrics to a summary file
         if save_folder:
-            model_name = os.path.basename(inference_result_path).split("_sample")[0]
             summary_path = os.path.join(save_folder, f"{model_name}_metrics_summary.txt")
             
             with open(summary_path, 'w') as f:
@@ -72,6 +84,18 @@ def main(
                 f.write(f"Average Convergent Thinking: {sum(convergent_scores)/len(convergent_scores):.4f}\n")
                 f.write(f"Average Divergent Thinking:  {sum(divergent_scores)/len(divergent_scores):.4f}\n")
                 f.write(f"Average NeoGauge Score:     {sum(neogauge_scores)/len(neogauge_scores):.4f}\n")
+                
+                # Add information about the CSV files
+                f.write("\nDetailed Results Saved:\n")
+                f.write("-" * 50 + "\n")
+                f.write(f"1. Individual scores per problem and generation:\n")
+                f.write(f"   {os.path.join(save_folder, f'{model_name}_individual_scores.csv')}\n")
+                f.write(f"\n2. Aggregated metrics per generation:\n")
+                f.write(f"   {os.path.join(save_folder, f'{model_name}_generation_metrics.csv')}\n")
+                f.write(f"\n3. Pivot tables (problem × generation):\n")
+                f.write(f"   Convergent: {os.path.join(save_folder, f'{model_name}_pivot_convergent.csv')}\n")
+                f.write(f"   Divergent:  {os.path.join(save_folder, f'{model_name}_pivot_divergent.csv')}\n")
+                f.write(f"   NeoGauge:   {os.path.join(save_folder, f'{model_name}_pivot_neogauge.csv')}\n")
     
     else:
         raise ValueError("Invalid task.")

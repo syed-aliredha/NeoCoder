@@ -358,8 +358,7 @@ def calculate_creativity(inference_result_path: str,
                          human_solution_path: str,
                          save_folder: str,
                          dp_rounds: int = 5):
-    """Calculate the creativity scores per generation and output detailed metrics
-    """
+    """Calculate the creativity scores per generation and output detailed metrics"""
     with open(inference_result_path, "r") as f:
         model_solutions = json.load(f)
 
@@ -423,10 +422,10 @@ def calculate_creativity(inference_result_path: str,
                 prev_constraint = constraint
 
     results = pd.DataFrame(results)
-    results.set_index('problem_id', inplace=True)
+    results.set_index(['problem_id', 'dp'], inplace=True)
     
     # Remove problematic rows
-    results = results[results.index != "1773F"]
+    results = results[results.index.get_level_values(0) != "1773F"]
 
     def check_constraints(row):
         return not bool(set(row["machine_techniques"]) & set(row["constraints"]))
@@ -444,7 +443,22 @@ def calculate_creativity(inference_result_path: str,
     results["follow_constraints"] = results.apply(check_constraints, axis=1)
     results["new_techniques"] = results.apply(check_techniques, axis=1)
     results["new_techniques_ratio"] = results.apply(calculate_new_techniques_ratio, axis=1)
-
+    
+    results["convergent_score"] = results.apply(lambda x: float(x['follow_constraints'] and x['correctness']), axis=1)
+    results["divergent_score"] = results["new_techniques_ratio"]
+    results["neogauge_score"] = results.apply(lambda x: x['convergent_score'] * x['new_techniques_ratio'], axis=1)
+    
+    detailed_results = results.reset_index()
+    
+    if not os.path.exists(save_folder):
+        os.makedirs(save_folder)
+    
+    base_name = os.path.basename(inference_result_path).split("_sample")[0]
+    
+    # Save the detailed individual scores
+    detailed_results.to_csv(os.path.join(save_folder, f"{base_name}_individual_scores.csv"))
+    
+    # Calculate aggregated metrics per generation
     def calculate_metrics_per_generation(results):
         metrics = {
             'convergent': [],
@@ -458,40 +472,37 @@ def calculate_creativity(inference_result_path: str,
                 continue
                 
             # Convergent thinking
-            correct_samples = len(dp_cluster[
-                (dp_cluster['follow_constraints'] == True) & 
-                (dp_cluster['correctness'] == True)
-            ])
-            conv_score = correct_samples / len(dp_cluster)
-            metrics['convergent'].append(conv_score)
+            metrics['convergent'].append(dp_cluster['convergent_score'].mean())
             
             # Divergent thinking
-            div_score = dp_cluster['new_techniques_ratio'].mean()
-            metrics['divergent'].append(div_score)
+            metrics['divergent'].append(dp_cluster['divergent_score'].mean())
             
             # NeoGauge
-            creative_samples = dp_cluster.apply(
-                lambda x: x['follow_constraints'] * x['correctness'] * x['new_techniques_ratio'], 
-                axis=1
-            ).sum()
-            neo_score = creative_samples / len(dp_cluster)
-            metrics['neogauge'].append(neo_score)
+            metrics['neogauge'].append(dp_cluster['neogauge_score'].mean())
             
         return metrics
 
     # Calculate per-generation metrics
-    metrics = calculate_metrics_per_generation(results)
-
-    if not os.path.exists(save_folder):
-        os.makedirs(save_folder)
+    metrics = calculate_metrics_per_generation(detailed_results)
     
-    base_name = os.path.basename(inference_result_path).split("_sample")[0]
-    
-    # Save detailed results
-    results.to_csv(os.path.join(save_folder, f"{base_name}_detailed_creativity.csv"))
-    
-    # Save metrics
+    # Save per-generation aggregated metrics
     metrics_df = pd.DataFrame(metrics)
     metrics_df.to_csv(os.path.join(save_folder, f"{base_name}_generation_metrics.csv"))
+    
+    # Create a pivot table for a different view of the data
+    pivot_convergent = pd.pivot_table(detailed_results, values='convergent_score', 
+                                     index=['problem_id'], columns=['dp'], 
+                                     aggfunc='mean', fill_value=0)
+    pivot_convergent.to_csv(os.path.join(save_folder, f"{base_name}_pivot_convergent.csv"))
+    
+    pivot_divergent = pd.pivot_table(detailed_results, values='divergent_score', 
+                                    index=['problem_id'], columns=['dp'], 
+                                    aggfunc='mean', fill_value=0)
+    pivot_divergent.to_csv(os.path.join(save_folder, f"{base_name}_pivot_divergent.csv"))
+    
+    pivot_neogauge = pd.pivot_table(detailed_results, values='neogauge_score', 
+                                   index=['problem_id'], columns=['dp'], 
+                                   aggfunc='mean', fill_value=0)
+    pivot_neogauge.to_csv(os.path.join(save_folder, f"{base_name}_pivot_neogauge.csv"))
 
     return metrics['convergent'], metrics['divergent'], metrics['neogauge']
