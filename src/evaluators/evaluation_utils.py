@@ -120,7 +120,9 @@ def function_with_timeout(func, args, timeout):
 def type_agnostic_compare(output: str, test_output: Union[str, List[str]]) -> bool:
 
     if isinstance(test_output, list):
-        output = list(map(str, eval(output)))
+        
+        output = list(map(str, output))
+      
         return output == test_output
     else:
         return output == test_output
@@ -214,6 +216,7 @@ def check_correctness(problem: Dict, completion: str, timeout: float,
 
 @contextlib.contextmanager
 def mock_input(mocked_inputs: List[Text]):
+    
     original_input = builtins.input
     input_values = iter(mocked_inputs)
     builtins.input = lambda: next(input_values)
@@ -222,13 +225,22 @@ def mock_input(mocked_inputs: List[Text]):
 
 @contextlib.contextmanager
 def capture_output():
+   
     new_out = io.StringIO()
     old_out = sys.stdout
     try:
+       
         sys.stdout = new_out
         yield new_out
-    finally:
+    except Exception as e:
+       
+       
         sys.stdout = old_out
+        raise 
+    finally:
+      
+        sys.stdout = old_out
+        
 
 
 @contextlib.contextmanager

@@ -1,4 +1,4 @@
-WARNING 12-21 18:55:17 cuda.py:22] You are using a deprecated `pynvml` package. Please install `nvidia-ml-py` instead, and make sure to uninstall `pynvml`. When both of them are installed, `pynvml` will take precedence and cause errors. See https://pypi.org/project/pynvml for more information.
-Convergent Thinking: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-Divergent Thinking: [0.9276094276094276, 0.9141414141414141, 0.9598984771573604, 0.9329879101899827, 0.9143129251700679, 0.8797250859106529]
-Creativity: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+WARNING 03-17 06:42:49 cuda.py:22] You are using a deprecated `pynvml` package. Please install `nvidia-ml-py` instead, and make sure to uninstall `pynvml`. When both of them are installed, `pynvml` will take precedence and cause errors. See https://pypi.org/project/pynvml for more information.
+Convergent Thinking: [0.18181818181818182, 0.020202020202020204, 0.015228426395939087, 0.0051813471502590676, 0.0, 0.0]
+Divergent Thinking: [0.9949494949494949, 0.9848484848484849, 0.976029328821207, 0.9870466321243523, 0.9834285714285714, 0.9932989690721649]
+Creativity: [0.18181818181818182, 0.020202020202020204, 0.015228426395939087, 0.0051813471502590676, 0.0, 0.0]
