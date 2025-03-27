@@ -358,7 +358,7 @@ def calculate_creativity(inference_result_path: str,
                          human_solution_path: str,
                          save_folder: str,
                          dp_rounds: int = 5):
-    """Calculate the final creativity score
+    """Calculate the creativity scores per generation and output detailed metrics
     """
     with open(inference_result_path, "r") as f:
         model_solutions = json.load(f)
@@ -371,9 +371,7 @@ def calculate_creativity(inference_result_path: str,
 
     human_solutions = {k: [t for ts in v for t in ts] for k, v in human.items()}
     human_solutions_counter = {k: Counter(v) for k, v in human_solutions.items()}
-    # get the size of each human solutions counter
     human_solutions_size = {k: len(v.values()) for k, v in human_solutions_counter.items()}
-    # sort the human_solution_size
     human_solutions_size = dict(sorted(human_solutions_size.items(), key=lambda x: x[1], reverse=True))
 
     results = dict(problem_id = [], 
@@ -384,7 +382,7 @@ def calculate_creativity(inference_result_path: str,
                    machine_solutions = [], 
                    correctness = [])
     
-    code_evaluator = CodeForceCorrectnessEvaluator(inference_result_path, test_case_path=None) # only used for parsing codes
+    code_evaluator = CodeForceCorrectnessEvaluator(inference_result_path, test_case_path=None)
     
     for problem in model_solutions:
         problem_id = problem["problem_id"]
@@ -394,7 +392,6 @@ def calculate_creativity(inference_result_path: str,
                 if output is not None: 
                     model_codes.append(code_evaluator.parse_code(output))
                 else:
-                    # sometimes the OpenAI API returns code not in the ```python ... ``` format
                     model_codes.append(code_evaluator.parse_code(problem['outputs'][idx]))
         elif "outputs" in problem:
             model_codes = [code_evaluator.parse_code(output) for output in problem["outputs"]]
@@ -412,7 +409,6 @@ def calculate_creativity(inference_result_path: str,
         dp_idx = 0
         prev_constraint = None
         for constraint, model_technique, model_code, correctness in zip(constraints, problem["techniques"], model_codes, problem['correctness']):
-
             if constraint == prev_constraint:
                 continue
             else:
@@ -428,6 +424,9 @@ def calculate_creativity(inference_result_path: str,
 
     results = pd.DataFrame(results)
     results.set_index('problem_id', inplace=True)
+    
+    # Remove problematic rows
+    results = results[results.index != "1773F"]
 
     def check_constraints(row):
         return not bool(set(row["machine_techniques"]) & set(row["constraints"]))
@@ -435,53 +434,64 @@ def calculate_creativity(inference_result_path: str,
     def check_techniques(row):
         if row["machine_techniques"] == []:
             return 0
-        else:
-            return len(set(row["machine_techniques"]) - set(row["human_techniques"]))
+        return len(set(row["machine_techniques"]) - set(row["human_techniques"]))
 
-    def calcualte_new_techniques_ratio(row):
+    def calculate_new_techniques_ratio(row):
         if row["machine_techniques"] == []:
             return 0
-        else:
-            return row['new_techniques'] / len(row['machine_techniques'])
+        return row['new_techniques'] / len(row['machine_techniques'])
 
     results["follow_constraints"] = results.apply(check_constraints, axis=1)
     results["new_techniques"] = results.apply(check_techniques, axis=1)
-    results["new_techniques_ratio"] = results.apply(calcualte_new_techniques_ratio, axis=1)
+    results["new_techniques_ratio"] = results.apply(calculate_new_techniques_ratio, axis=1)
 
-    # delete rows 1773F, as we cannot crawl its human solutions due to the website's restriction
-    results = results[results.index != "1773F"]
-
-    def calculate_convergent_thinking(results, dp_rounds):
-        """probability of following constraints and correctness at dp_rounds
-        """
-
-        num_samples = len(results[results["dp"] == dp_rounds])
-        num_correct_samples = len(results[(results["dp"] == dp_rounds) & (results["follow_constraints"] == True) & (results["correctness"] == True)])
+    def calculate_metrics_per_generation(results):
+        metrics = {
+            'convergent': [],
+            'divergent': [],
+            'neogauge': []
+        }
         
-        return num_correct_samples / num_samples
+        for dp_round in range(max(results['dp']) + 1):
+            dp_cluster = results[results['dp'] == dp_round]
+            if len(dp_cluster) == 0:
+                continue
+                
+            # Convergent thinking
+            correct_samples = len(dp_cluster[
+                (dp_cluster['follow_constraints'] == True) & 
+                (dp_cluster['correctness'] == True)
+            ])
+            conv_score = correct_samples / len(dp_cluster)
+            metrics['convergent'].append(conv_score)
+            
+            # Divergent thinking
+            div_score = dp_cluster['new_techniques_ratio'].mean()
+            metrics['divergent'].append(div_score)
+            
+            # NeoGauge
+            creative_samples = dp_cluster.apply(
+                lambda x: x['follow_constraints'] * x['correctness'] * x['new_techniques_ratio'], 
+                axis=1
+            ).sum()
+            neo_score = creative_samples / len(dp_cluster)
+            metrics['neogauge'].append(neo_score)
+            
+        return metrics
 
-    def calculaate_divergent_thinking(results, dp_rounds):
-        """Average number of new techniques at dp_rounds
-        """
-
-        return results[results["dp"] == dp_rounds]["new_techniques_ratio"].mean()
-    
-    def calculate_creativity(results, dp_rounds):
-        """Probability of convergent thinking and divergent thinking at dp_rounds
-        """
-
-        dp_cluster = results[results["dp"] == dp_rounds]
-        num_creative_samples = dp_cluster.apply(lambda x: x["follow_constraints"] * x["correctness"] * x["new_techniques_ratio"], axis=1).sum()
-        return num_creative_samples / len(dp_cluster)
-
-    convergent_thinking = [calculate_convergent_thinking(results, i) for i in range(0, dp_rounds+1)]
-    divergent_thinking = [calculaate_divergent_thinking(results, i) for i in range(0, dp_rounds+1)]
-    creativity = [calculate_creativity(results, i) for i in range(0, dp_rounds+1)]
+    # Calculate per-generation metrics
+    metrics = calculate_metrics_per_generation(results)
 
     if not os.path.exists(save_folder):
         os.makedirs(save_folder)
-    base_name = os.path.basename(inference_result_path).split("_sample")[0] 
-    # save the results for further analysis
-    results.to_csv(os.path.join(save_folder, base_name + "_creativity.csv"))
+    
+    base_name = os.path.basename(inference_result_path).split("_sample")[0]
+    
+    # Save detailed results
+    results.to_csv(os.path.join(save_folder, f"{base_name}_detailed_creativity.csv"))
+    
+    # Save metrics
+    metrics_df = pd.DataFrame(metrics)
+    metrics_df.to_csv(os.path.join(save_folder, f"{base_name}_generation_metrics.csv"))
 
-    return convergent_thinking, divergent_thinking, creativity
+    return metrics['convergent'], metrics['divergent'], metrics['neogauge']
