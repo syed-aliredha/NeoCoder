@@ -1,0 +1,51 @@
+Per Generation Creativity Metrics:
+--------------------------------------------------
+
+Generation 0:
+  Convergent Thinking: 0.1768
+  Divergent Thinking:  0.9938
+  NeoGauge Score:     0.1768
+
+Generation 1:
+  Convergent Thinking: 0.0404
+  Divergent Thinking:  0.9957
+  NeoGauge Score:     0.0404
+
+Generation 2:
+  Convergent Thinking: 0.0152
+  Divergent Thinking:  0.9898
+  NeoGauge Score:     0.0152
+
+Generation 3:
+  Convergent Thinking: 0.0052
+  Divergent Thinking:  0.9745
+  NeoGauge Score:     0.0052
+
+Generation 4:
+  Convergent Thinking: 0.0000
+  Divergent Thinking:  1.0000
+  NeoGauge Score:     0.0000
+
+Generation 5:
+  Convergent Thinking: 0.0000
+  Divergent Thinking:  0.9948
+  NeoGauge Score:     0.0000
+
+Overall Averages:
+--------------------------------------------------
+Average Convergent Thinking: 0.0396
+Average Divergent Thinking:  0.9914
+Average NeoGauge Score:     0.0396
+
+Detailed Results Saved:
+--------------------------------------------------
+1. Individual scores per problem and generation:
+   datasets/CodeForce/neoresults/Llama-3.1-8B-Instruct_individual_scores.csv
+
+2. Aggregated metrics per generation:
+   datasets/CodeForce/neoresults/Llama-3.1-8B-Instruct_generation_metrics.csv
+
+3. Pivot tables (problem × generation):
+   Convergent: datasets/CodeForce/neoresults/Llama-3.1-8B-Instruct_pivot_convergent.csv
+   Divergent:  datasets/CodeForce/neoresults/Llama-3.1-8B-Instruct_pivot_divergent.csv
+   NeoGauge:   datasets/CodeForce/neoresults/Llama-3.1-8B-Instruct_pivot_neogauge.csv
